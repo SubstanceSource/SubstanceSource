@@ -6,7 +6,6 @@
 #include "SubstanceToolkit.h"
 #include "SubstanceSourceModule.h"
 
-#include "ToolMenus.h"
 #include "EditorStyleSet.h"
 #include "Toolkits/ToolkitManager.h"
 #include "Toolkits/AssetEditorToolkit.h"
@@ -212,9 +211,8 @@ void SSubstanceSourceToolkitHost::GenerateMenus(bool bForceCreateMenu)
 {
 	if (bForceCreateMenu || DefaultMenuWidget != SNullWidget::NullWidget)
 	{
-		FToolMenuContext ToolMenuContext;
 		IMainFrameModule& MainFrameModule = FModuleManager::LoadModuleChecked<IMainFrameModule>("MainFrame");
-		DefaultMenuWidget = MainFrameModule.MakeMainMenu(MyTabManager, "SubstanceToolkit.MainMenu", ToolMenuContext);
+		DefaultMenuWidget = MainFrameModule.MakeMainMenu(MyTabManager, FExtender::Combine(MenuExtenders).ToSharedRef());
 
 		MenuWidgetContent->SetContent(DefaultMenuWidget.ToSharedRef());
 	}

@@ -23,7 +23,6 @@ enum ESubstanceEngineType
 UENUM(BlueprintType)
 enum EDefaultSubstanceTextureSize
 {
-	FAKE,
 	SIZE_16 = 4 UMETA(DisplayName = "16"),
 	SIZE_32 = 5 UMETA(DisplayName = "32"),
 	SIZE_64 = 6 UMETA(DisplayName = "64"),

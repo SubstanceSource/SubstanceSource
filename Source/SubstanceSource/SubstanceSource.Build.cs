@@ -48,8 +48,7 @@ public class SubstanceSource : ModuleRules
                 "SubstanceCore",
                 "UnrealEd",
                 "SequencerWidgets",
-                "SubstanceEditor",
-				"ToolMenus",
+                "SubstanceEditor"
 			});
 
         PrivateDependencyModuleNames.AddRange(new string[] {
