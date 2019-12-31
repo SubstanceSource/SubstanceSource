@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeReimportSubstanceImageInputFactory() {}
 		{ "ModuleRelativePath", "Classes/ReimportSubstanceImageInputFactory.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths = { "ReimportPaths", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UReimportSubstanceImageInputFactory, ReimportPaths), METADATA_PARAMS(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths_MetaData, ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths = { "ReimportPaths", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UReimportSubstanceImageInputFactory, ReimportPaths), METADATA_PARAMS(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths_Inner = { "ReimportPaths", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::NewProp_ReimportPaths,
@@ -73,12 +73,12 @@ void EmptyLinkFunctionForGeneratedCodeReimportSubstanceImageInputFactory() {}
 		nullptr,
 		Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::PropPointers),
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceImageInputFactory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UReimportSubstanceImageInputFactory()
 	{
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeReimportSubstanceImageInputFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UReimportSubstanceImageInputFactory, 4127065597);
+	IMPLEMENT_CLASS(UReimportSubstanceImageInputFactory, 3764824177);
 	template<> SUBSTANCEEDITOR_API UClass* StaticClass<UReimportSubstanceImageInputFactory>()
 	{
 		return UReimportSubstanceImageInputFactory::StaticClass();

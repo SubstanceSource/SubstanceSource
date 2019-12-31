@@ -80,7 +80,6 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "SubstanceImageInput.h" },
 		{ "ModuleRelativePath", "Classes/SubstanceImageInput.h" },
-		{ "SerializeToFArchive", "" },
 	};
 #endif
 #if WITH_METADATA
@@ -90,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Graph instances that use this image input" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers = { "Consumers", nullptr, (EPropertyFlags)0x0010000000002000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, Consumers), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers = { "Consumers", nullptr, (EPropertyFlags)0x0010000000002000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, Consumers), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers_Inner = { "Consumers", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USubstanceGraphInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp_MetaData[] = {
@@ -100,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Time stamp of the loaded file" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp = { "SourceFileTimestamp", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SourceFileTimestamp), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp = { "SourceFileTimestamp", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SourceFileTimestamp), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFileTimestamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath_MetaData[] = {
 		{ "Category", "File" },
@@ -109,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Path to used to import image input" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath = { "SourceFilePath", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SourceFilePath), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath = { "SourceFilePath", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SourceFilePath), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SourceFilePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents_MetaData[] = {
 		{ "Category", "General" },
@@ -118,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "The number of data channels this uses for GPU data" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents = { "NumComponents", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, NumComponents), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents = { "NumComponents", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, NumComponents), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_NumComponents_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY_MetaData[] = {
 		{ "Category", "General" },
@@ -127,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Image height" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY = { "SizeY", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SizeY), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY = { "SizeY", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SizeY), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX_MetaData[] = {
 		{ "Category", "General" },
@@ -136,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Image width" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX = { "SizeX", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SizeX), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX = { "SizeX", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, SizeX), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_SizeX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha_MetaData[] = {
 		{ "Category", "General" },
@@ -145,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Alpha channel compression (0: disable, 1: auto, 2-99: manual)" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha = { "CompressionLevelAlpha", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, CompressionLevelAlpha), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha = { "CompressionLevelAlpha", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, CompressionLevelAlpha), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelAlpha_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB_MetaData[] = {
 		{ "Category", "General" },
@@ -154,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		{ "ToolTip", "Color channels compression (0: disable, 1: auto, 2-99: manual)" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB = { "CompressionLevelRGB", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, CompressionLevelRGB), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB = { "CompressionLevelRGB", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImageInput, CompressionLevelRGB), METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_CompressionLevelRGB_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USubstanceImageInput_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceImageInput_Statics::NewProp_Consumers_Inner,
@@ -177,12 +176,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		nullptr,
 		Z_Construct_UClass_USubstanceImageInput_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::PropPointers),
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceImageInput_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImageInput_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceImageInput()
 	{
@@ -193,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImageInput() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceImageInput, 1623259711);
+	IMPLEMENT_CLASS(USubstanceImageInput, 2423357171);
 	template<> SUBSTANCECORE_API UClass* StaticClass<USubstanceImageInput>()
 	{
 		return USubstanceImageInput::StaticClass();

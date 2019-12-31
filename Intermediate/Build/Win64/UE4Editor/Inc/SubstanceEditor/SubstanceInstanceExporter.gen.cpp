@@ -55,12 +55,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceExporter() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x000000A8u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceExporter_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceExporter_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceExporter_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceExporter_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceInstanceExporter()
 	{
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceExporter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceInstanceExporter, 2134372359);
+	IMPLEMENT_CLASS(USubstanceInstanceExporter, 1533352997);
 	template<> SUBSTANCEEDITOR_API UClass* StaticClass<USubstanceInstanceExporter>()
 	{
 		return USubstanceInstanceExporter::StaticClass();

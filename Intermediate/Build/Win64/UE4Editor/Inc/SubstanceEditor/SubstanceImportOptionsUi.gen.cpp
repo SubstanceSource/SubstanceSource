@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 		{ "ToolTip", "Force the Texture Objects objects' path" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath = { "MaterialDestinationPath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, MaterialDestinationPath), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath = { "MaterialDestinationPath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, MaterialDestinationPath), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath_MetaData[] = {
 		{ "Category", "General" },
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 		{ "ToolTip", "Force the Graph Instance objects' path" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath = { "InstanceDestinationPath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, InstanceDestinationPath), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath = { "InstanceDestinationPath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, InstanceDestinationPath), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName_MetaData[] = {
 		{ "Category", "General" },
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 		{ "ToolTip", "Instance suggested name (based on filename)" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName = { "MaterialName", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, MaterialName), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName = { "MaterialName", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, MaterialName), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName_MetaData[] = {
 		{ "Category", "General" },
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 		{ "ToolTip", "Instance suggested name (based on filename)" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName = { "InstanceName", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, InstanceName), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName = { "InstanceName", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceImportOptionsUi, InstanceName), METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_MetaData[] = {
 		{ "Category", "Materials" },
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 	{
 		((USubstanceImportOptionsUi*)Obj)->bCreateMaterial = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial = { "bCreateMaterial", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial = { "bCreateMaterial", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_MetaData[] = {
 		{ "Category", "General" },
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 	{
 		((USubstanceImportOptionsUi*)Obj)->bCreateInstance = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance = { "bCreateInstance", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance = { "bCreateInstance", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bCreateInstance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_MetaData[] = {
 		{ "Category", "General" },
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 	{
 		((USubstanceImportOptionsUi*)Obj)->bOverrideMaterialPath = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath = { "bOverrideMaterialPath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath = { "bOverrideMaterialPath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideMaterialPath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_MetaData[] = {
 		{ "Category", "General" },
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 	{
 		((USubstanceImportOptionsUi*)Obj)->bOverrideInstancePath = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath = { "bOverrideInstancePath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath = { "bOverrideInstancePath", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideInstancePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_MetaData[] = {
 		{ "Category", "General" },
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 	{
 		((USubstanceImportOptionsUi*)Obj)->bOverrideFullName = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName = { "bOverrideFullName", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName = { "bOverrideFullName", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(USubstanceImportOptionsUi), &Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_bOverrideFullName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USubstanceImportOptionsUi_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_MaterialDestinationPath,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceImportOptionsUi_Statics::NewProp_InstanceDestinationPath,
@@ -211,12 +211,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 		nullptr,
 		Z_Construct_UClass_USubstanceImportOptionsUi_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::PropPointers),
 		0,
 		0x000000A4u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceImportOptionsUi_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceImportOptionsUi()
 	{
@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceImportOptionsUi() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceImportOptionsUi, 2449122351);
+	IMPLEMENT_CLASS(USubstanceImportOptionsUi, 46871858);
 	template<> SUBSTANCEEDITOR_API UClass* StaticClass<USubstanceImportOptionsUi>()
 	{
 		return USubstanceImportOptionsUi::StaticClass();

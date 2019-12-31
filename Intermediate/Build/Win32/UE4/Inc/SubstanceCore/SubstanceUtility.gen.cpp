@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceUtility() {}
 		return ESubstanceTextureSize_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESubstanceTextureSize(ESubstanceTextureSize_StaticEnum, TEXT("/Script/SubstanceCore"), TEXT("ESubstanceTextureSize"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubstanceTextureSize_Hash() { return 3567666096U; }
+	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubstanceTextureSize_Hash() { return 1080768521U; }
 	UEnum* Z_Construct_UEnum_SubstanceCore_ESubstanceTextureSize()
 	{
 #if WITH_HOT_RELOAD
@@ -111,11 +111,11 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceUtility() {}
 				"ESubstanceTextureSize",
 				"ESubstanceTextureSize",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -176,14 +176,14 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ModuleRelativePath", "Classes/SubstanceUtility.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier = { "InputImageIdentifier", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSubstanceConnection, InputImageIdentifier), METADATA_PARAMS(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier = { "InputImageIdentifier", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSubstanceConnection, InputImageIdentifier), METADATA_PARAMS(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier_MetaData[] = {
 		{ "Category", "Substance" },
 		{ "ModuleRelativePath", "Classes/SubstanceUtility.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier = { "OutputIdentifier", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSubstanceConnection, OutputIdentifier), METADATA_PARAMS(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier = { "OutputIdentifier", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSubstanceConnection, OutputIdentifier), METADATA_PARAMS(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSubstanceConnection_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_InputImageIdentifier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSubstanceConnection_Statics::NewProp_OutputIdentifier,
@@ -196,10 +196,10 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		sizeof(FSubstanceConnection),
 		alignof(FSubstanceConnection),
 		Z_Construct_UScriptStruct_FSubstanceConnection_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSubstanceConnection_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSubstanceConnection()
 	{
@@ -216,7 +216,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSubstanceConnection_Hash() { return 1492541587U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSubstanceConnection_Hash() { return 3107893136U; }
 	void USubstanceUtility::StaticRegisterNativesUSubstanceUtility()
 	{
 		UClass* Class = USubstanceUtility::StaticClass();
@@ -239,7 +239,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 			{ "SetGraphInstanceOutputSizeInt", &USubstanceUtility::execSetGraphInstanceOutputSizeInt },
 			{ "SyncRendering", &USubstanceUtility::execSyncRendering },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics
 	{
@@ -266,7 +266,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Queue a Substance Graph Instance in the renderer" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "AsyncRendering", nullptr, nullptr, sizeof(SubstanceUtility_eventAsyncRendering_Parms), Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "AsyncRendering", nullptr, nullptr, sizeof(SubstanceUtility_eventAsyncRendering_Parms), Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_AsyncRendering_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_AsyncRendering()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -291,7 +291,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Clear Substance Memory Cache" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_ClearCache_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "ClearCache", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_ClearCache_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_ClearCache_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_ClearCache_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "ClearCache", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_ClearCache_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_ClearCache_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_ClearCache()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -330,7 +330,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Copy the inputs values from a Substance Graph Instance to another one" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "CopyInputParameters", nullptr, nullptr, sizeof(SubstanceUtility_eventCopyInputParameters_Parms), Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "CopyInputParameters", nullptr, nullptr, sizeof(SubstanceUtility_eventCopyInputParameters_Parms), Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CopyInputParameters_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_CopyInputParameters()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -373,7 +373,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections = { "Connections", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SubstanceUtility_eventCreateAggregateSubstanceFactory_Parms, Connections), METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections_MetaData, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections = { "Connections", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SubstanceUtility_eventCreateAggregateSubstanceFactory_Parms, Connections), METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_Connections_Inner = { "Connections", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSubstanceConnection, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_InputFactoryGraphIndex = { "InputFactoryGraphIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SubstanceUtility_eventCreateAggregateSubstanceFactory_Parms, InputFactoryGraphIndex), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::NewProp_InputFactory = { "InputFactory", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SubstanceUtility_eventCreateAggregateSubstanceFactory_Parms, InputFactory), Z_Construct_UClass_USubstanceInstanceFactory_NoRegister, METADATA_PARAMS(nullptr, 0) };
@@ -396,7 +396,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Create an aggregate substance factory by fusing output images from one substance to the input images of another substance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "CreateAggregateSubstanceFactory", nullptr, nullptr, sizeof(SubstanceUtility_eventCreateAggregateSubstanceFactory_Parms), Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "CreateAggregateSubstanceFactory", nullptr, nullptr, sizeof(SubstanceUtility_eventCreateAggregateSubstanceFactory_Parms), Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -449,7 +449,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "CreateGraphInstance", nullptr, nullptr, sizeof(SubstanceUtility_eventCreateGraphInstance_Parms), Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "CreateGraphInstance", nullptr, nullptr, sizeof(SubstanceUtility_eventCreateGraphInstance_Parms), Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -496,7 +496,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "DisableInstanceOutputs", nullptr, nullptr, sizeof(SubstanceUtility_eventDisableInstanceOutputs_Parms), Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "DisableInstanceOutputs", nullptr, nullptr, sizeof(SubstanceUtility_eventDisableInstanceOutputs_Parms), Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -540,7 +540,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "DuplicateGraphInstance", nullptr, nullptr, sizeof(SubstanceUtility_eventDuplicateGraphInstance_Parms), Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "DuplicateGraphInstance", nullptr, nullptr, sizeof(SubstanceUtility_eventDuplicateGraphInstance_Parms), Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -587,7 +587,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "EnableInstanceOutputs", nullptr, nullptr, sizeof(SubstanceUtility_eventEnableInstanceOutputs_Parms), Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "EnableInstanceOutputs", nullptr, nullptr, sizeof(SubstanceUtility_eventEnableInstanceOutputs_Parms), Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -626,7 +626,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Get the name of the factory that created this instance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetFactoryName", nullptr, nullptr, sizeof(SubstanceUtility_eventGetFactoryName_Parms), Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetFactoryName", nullptr, nullptr, sizeof(SubstanceUtility_eventGetFactoryName_Parms), Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetFactoryName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_GetFactoryName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -665,7 +665,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Get the original graph name" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetGraphName", nullptr, nullptr, sizeof(SubstanceUtility_eventGetGraphName_Parms), Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetGraphName", nullptr, nullptr, sizeof(SubstanceUtility_eventGetGraphName_Parms), Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetGraphName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_GetGraphName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -700,7 +700,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Get the current rendering progress of the Substances currently loaded ([0, 1.0])" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetSubstanceLoadingProgress", nullptr, nullptr, sizeof(SubstanceUtility_eventGetSubstanceLoadingProgress_Parms), Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetSubstanceLoadingProgress", nullptr, nullptr, sizeof(SubstanceUtility_eventGetSubstanceLoadingProgress_Parms), Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -742,7 +742,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Get the list of Substance Graph Instances used by a material" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetSubstances", nullptr, nullptr, sizeof(SubstanceUtility_eventGetSubstances_Parms), Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetSubstances", nullptr, nullptr, sizeof(SubstanceUtility_eventGetSubstances_Parms), Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstances_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_GetSubstances()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -784,7 +784,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Get the textures (from enabled outputs) of a Substance Graph Instance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetSubstanceTextures", nullptr, nullptr, sizeof(SubstanceUtility_eventGetSubstanceTextures_Parms), Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "GetSubstanceTextures", nullptr, nullptr, sizeof(SubstanceUtility_eventGetSubstanceTextures_Parms), Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -819,7 +819,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Reset the input values of a Substance Graph Instance to their default values" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "ResetInputParameters", nullptr, nullptr, sizeof(SubstanceUtility_eventResetInputParameters_Parms), Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "ResetInputParameters", nullptr, nullptr, sizeof(SubstanceUtility_eventResetInputParameters_Parms), Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_ResetInputParameters_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_ResetInputParameters()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -862,7 +862,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Set the output size input of the specified GraphInstance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "SetGraphInstanceOutputSize", nullptr, nullptr, sizeof(SubstanceUtility_eventSetGraphInstanceOutputSize_Parms), Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "SetGraphInstanceOutputSize", nullptr, nullptr, sizeof(SubstanceUtility_eventSetGraphInstanceOutputSize_Parms), Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -906,7 +906,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Set the output size input of the specified GraphInstance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "SetGraphInstanceOutputSizeInt", nullptr, nullptr, sizeof(SubstanceUtility_eventSetGraphInstanceOutputSizeInt_Parms), Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "SetGraphInstanceOutputSizeInt", nullptr, nullptr, sizeof(SubstanceUtility_eventSetGraphInstanceOutputSizeInt_Parms), Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -941,7 +941,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		{ "ToolTip", "Start the synchronous rendering of a Substance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "SyncRendering", nullptr, nullptr, sizeof(SubstanceUtility_eventSyncRendering_Parms), Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceUtility, nullptr, "SyncRendering", nullptr, nullptr, sizeof(SubstanceUtility_eventSyncRendering_Parms), Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022403, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceUtility_SyncRendering_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceUtility_SyncRendering()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -970,23 +970,23 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		(UObject* (*)())Z_Construct_UPackage__Script_SubstanceCore,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USubstanceUtility_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_USubstanceUtility_AsyncRendering, "AsyncRendering" }, // 3193636476
-		{ &Z_Construct_UFunction_USubstanceUtility_ClearCache, "ClearCache" }, // 2751634196
-		{ &Z_Construct_UFunction_USubstanceUtility_CopyInputParameters, "CopyInputParameters" }, // 1353817528
-		{ &Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory, "CreateAggregateSubstanceFactory" }, // 2693045860
-		{ &Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance, "CreateGraphInstance" }, // 1823819822
-		{ &Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs, "DisableInstanceOutputs" }, // 3642408833
-		{ &Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance, "DuplicateGraphInstance" }, // 2926875487
-		{ &Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs, "EnableInstanceOutputs" }, // 2382615415
-		{ &Z_Construct_UFunction_USubstanceUtility_GetFactoryName, "GetFactoryName" }, // 2603270874
-		{ &Z_Construct_UFunction_USubstanceUtility_GetGraphName, "GetGraphName" }, // 400788735
-		{ &Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress, "GetSubstanceLoadingProgress" }, // 3345841680
-		{ &Z_Construct_UFunction_USubstanceUtility_GetSubstances, "GetSubstances" }, // 1095565093
-		{ &Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures, "GetSubstanceTextures" }, // 3333813638
-		{ &Z_Construct_UFunction_USubstanceUtility_ResetInputParameters, "ResetInputParameters" }, // 2253429390
-		{ &Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize, "SetGraphInstanceOutputSize" }, // 1711065866
-		{ &Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt, "SetGraphInstanceOutputSizeInt" }, // 3543583066
-		{ &Z_Construct_UFunction_USubstanceUtility_SyncRendering, "SyncRendering" }, // 3626949938
+		{ &Z_Construct_UFunction_USubstanceUtility_AsyncRendering, "AsyncRendering" }, // 2150179395
+		{ &Z_Construct_UFunction_USubstanceUtility_ClearCache, "ClearCache" }, // 130058620
+		{ &Z_Construct_UFunction_USubstanceUtility_CopyInputParameters, "CopyInputParameters" }, // 3397342200
+		{ &Z_Construct_UFunction_USubstanceUtility_CreateAggregateSubstanceFactory, "CreateAggregateSubstanceFactory" }, // 297505672
+		{ &Z_Construct_UFunction_USubstanceUtility_CreateGraphInstance, "CreateGraphInstance" }, // 4237651005
+		{ &Z_Construct_UFunction_USubstanceUtility_DisableInstanceOutputs, "DisableInstanceOutputs" }, // 618317665
+		{ &Z_Construct_UFunction_USubstanceUtility_DuplicateGraphInstance, "DuplicateGraphInstance" }, // 3613368690
+		{ &Z_Construct_UFunction_USubstanceUtility_EnableInstanceOutputs, "EnableInstanceOutputs" }, // 1056596313
+		{ &Z_Construct_UFunction_USubstanceUtility_GetFactoryName, "GetFactoryName" }, // 574093891
+		{ &Z_Construct_UFunction_USubstanceUtility_GetGraphName, "GetGraphName" }, // 2126954275
+		{ &Z_Construct_UFunction_USubstanceUtility_GetSubstanceLoadingProgress, "GetSubstanceLoadingProgress" }, // 3646003209
+		{ &Z_Construct_UFunction_USubstanceUtility_GetSubstances, "GetSubstances" }, // 2721845011
+		{ &Z_Construct_UFunction_USubstanceUtility_GetSubstanceTextures, "GetSubstanceTextures" }, // 751849565
+		{ &Z_Construct_UFunction_USubstanceUtility_ResetInputParameters, "ResetInputParameters" }, // 3078516729
+		{ &Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSize, "SetGraphInstanceOutputSize" }, // 2261188689
+		{ &Z_Construct_UFunction_USubstanceUtility_SetGraphInstanceOutputSizeInt, "SetGraphInstanceOutputSizeInt" }, // 3293498116
+		{ &Z_Construct_UFunction_USubstanceUtility_SyncRendering, "SyncRendering" }, // 2499249658
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceUtility_Statics::Class_MetaDataParams[] = {
@@ -1006,12 +1006,12 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x000800A0u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceUtility_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceUtility_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceUtility_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceUtility_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceUtility()
 	{
@@ -1022,7 +1022,7 @@ static struct FScriptStruct_SubstanceCore_StaticRegisterNativesFSubstanceConnect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceUtility, 3197498240);
+	IMPLEMENT_CLASS(USubstanceUtility, 1042590490);
 	template<> SUBSTANCECORE_API UClass* StaticClass<USubstanceUtility>()
 	{
 		return USubstanceUtility::StaticClass();

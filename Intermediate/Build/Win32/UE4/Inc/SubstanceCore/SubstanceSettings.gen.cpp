@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		return EDefaultSubstanceTextureSize_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EDefaultSubstanceTextureSize(EDefaultSubstanceTextureSize_StaticEnum, TEXT("/Script/SubstanceCore"), TEXT("EDefaultSubstanceTextureSize"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize_Hash() { return 3605781012U; }
+	uint32 Get_Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize_Hash() { return 376363674U; }
 	UEnum* Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize()
 	{
 #if WITH_HOT_RELOAD
@@ -47,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		if (!ReturnEnum)
 		{
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "SIZE_0", (int64)SIZE_0 },
 				{ "SIZE_16", (int64)SIZE_16 },
 				{ "SIZE_32", (int64)SIZE_32 },
 				{ "SIZE_64", (int64)SIZE_64 },
@@ -61,6 +62,8 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
 				{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
+				{ "SIZE_0.Hidden", "" },
+				{ "SIZE_0.Name", "SIZE_0" },
 				{ "SIZE_1024.DisplayName", "1024" },
 				{ "SIZE_1024.Name", "SIZE_1024" },
 				{ "SIZE_128.DisplayName", "128" },
@@ -87,11 +90,11 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 				"EDefaultSubstanceTextureSize",
 				"EDefaultSubstanceTextureSize",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -111,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		return ESubstanceEngineType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESubstanceEngineType(ESubstanceEngineType_StaticEnum, TEXT("/Script/SubstanceCore"), TEXT("ESubstanceEngineType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubstanceEngineType_Hash() { return 4108090288U; }
+	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubstanceEngineType_Hash() { return 1700820876U; }
 	UEnum* Z_Construct_UEnum_SubstanceCore_ESubstanceEngineType()
 	{
 #if WITH_HOT_RELOAD
@@ -141,11 +144,11 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 				"ESubstanceEngineType",
 				"ESubstanceEngineType",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -219,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY = { "DefaultSubstanceOutputSizeY", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, DefaultSubstanceOutputSizeY), Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY = { "DefaultSubstanceOutputSizeY", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, DefaultSubstanceOutputSizeY), Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX_MetaData[] = {
 		{ "Category", "Substance Import Settings" },
@@ -227,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX = { "DefaultSubstanceOutputSizeX", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, DefaultSubstanceOutputSizeX), Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX = { "DefaultSubstanceOutputSizeX", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, DefaultSubstanceOutputSizeX), Z_Construct_UEnum_SubstanceCore_EDefaultSubstanceTextureSize, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine_MetaData[] = {
 		{ "Category", "Cooking" },
@@ -235,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine = { "SubstanceEngine", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, SubstanceEngine), Z_Construct_UEnum_SubstanceCore_ESubstanceEngineType, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine = { "SubstanceEngine", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, SubstanceEngine), Z_Construct_UEnum_SubstanceCore_ESubstanceEngineType, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_SubstanceEngine_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode_MetaData[] = {
 		{ "Category", "Cooking" },
@@ -243,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode = { "DefaultGenerationMode", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, DefaultGenerationMode), Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode = { "DefaultGenerationMode", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, DefaultGenerationMode), Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode, METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultGenerationMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame_MetaData[] = {
 		{ "Category", "Optimization" },
@@ -252,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame = { "MaxAsyncSubstancesRenderedPerFrame", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, MaxAsyncSubstancesRenderedPerFrame), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame = { "MaxAsyncSubstancesRenderedPerFrame", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, MaxAsyncSubstancesRenderedPerFrame), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MaxAsyncSubstancesRenderedPerFrame_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip_MetaData[] = {
 		{ "Category", "Cooking" },
@@ -262,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip = { "AsyncLoadMipClip", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, AsyncLoadMipClip), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip = { "AsyncLoadMipClip", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, AsyncLoadMipClip), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_AsyncLoadMipClip_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores_MetaData[] = {
 		{ "Category", "Hardware Budget" },
@@ -271,7 +274,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores = { "CPUCores", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, CPUCores), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores = { "CPUCores", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, CPUCores), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_CPUCores_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb_MetaData[] = {
 		{ "Category", "Hardware Budget" },
@@ -280,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		{ "ModuleRelativePath", "Classes/SubstanceSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb = { "MemoryBudgetMb", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, MemoryBudgetMb), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb = { "MemoryBudgetMb", nullptr, (EPropertyFlags)0x0010000000004001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceSettings, MemoryBudgetMb), METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::NewProp_MemoryBudgetMb_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USubstanceSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeY,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceSettings_Statics::NewProp_DefaultSubstanceOutputSizeX,
@@ -302,12 +305,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		nullptr,
 		Z_Construct_UClass_USubstanceSettings_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::PropPointers),
 		0,
 		0x001000A6u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceSettings_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceSettings()
 	{
@@ -318,7 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceSettings, 2193289060);
+	IMPLEMENT_CLASS(USubstanceSettings, 2900589324);
 	template<> SUBSTANCECORE_API UClass* StaticClass<USubstanceSettings>()
 	{
 		return USubstanceSettings::StaticClass();

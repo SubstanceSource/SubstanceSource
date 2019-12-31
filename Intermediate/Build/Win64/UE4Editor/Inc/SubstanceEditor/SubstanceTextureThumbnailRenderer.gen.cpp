@@ -55,12 +55,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTextureThumbnailRenderer() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceTextureThumbnailRenderer_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceTextureThumbnailRenderer_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceTextureThumbnailRenderer_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTextureThumbnailRenderer_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceTextureThumbnailRenderer()
 	{
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTextureThumbnailRenderer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceTextureThumbnailRenderer, 2745472351);
+	IMPLEMENT_CLASS(USubstanceTextureThumbnailRenderer, 767560736);
 	template<> SUBSTANCEEDITOR_API UClass* StaticClass<USubstanceTextureThumbnailRenderer>()
 	{
 		return USubstanceTextureThumbnailRenderer::StaticClass();

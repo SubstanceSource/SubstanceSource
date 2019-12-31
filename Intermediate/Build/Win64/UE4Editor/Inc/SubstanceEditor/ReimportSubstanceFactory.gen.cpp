@@ -58,12 +58,12 @@ void EmptyLinkFunctionForGeneratedCodeReimportSubstanceFactory() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UReimportSubstanceFactory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceFactory_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UReimportSubstanceFactory_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UReimportSubstanceFactory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UReimportSubstanceFactory()
 	{
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeReimportSubstanceFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UReimportSubstanceFactory, 359444668);
+	IMPLEMENT_CLASS(UReimportSubstanceFactory, 2677565078);
 	template<> SUBSTANCEEDITOR_API UClass* StaticClass<UReimportSubstanceFactory>()
 	{
 		return UReimportSubstanceFactory::StaticClass();

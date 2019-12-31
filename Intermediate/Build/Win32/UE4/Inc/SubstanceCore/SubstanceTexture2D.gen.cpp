@@ -37,7 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		return ESubChannelType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESubChannelType(ESubChannelType_StaticEnum, TEXT("/Script/SubstanceCore"), TEXT("ESubChannelType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubChannelType_Hash() { return 1995665916U; }
+	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubChannelType_Hash() { return 973612745U; }
 	UEnum* Z_Construct_UEnum_SubstanceCore_ESubChannelType()
 	{
 #if WITH_HOT_RELOAD
@@ -96,11 +96,11 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 				"ESubChannelType",
 				"ESubChannelType",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetChannel", &USubstanceTexture2D::execGetChannel },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics
 	{
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		{ "ToolTip", "Returns a list of all of the input identifiers" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceTexture2D, nullptr, "GetChannel", nullptr, nullptr, sizeof(SubstanceTexture2D_eventGetChannel_Parms), Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USubstanceTexture2D, nullptr, "GetChannel", nullptr, nullptr, sizeof(SubstanceTexture2D_eventGetChannel_Parms), Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_USubstanceTexture2D_GetChannel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_USubstanceTexture2D_GetChannel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -186,14 +186,13 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_SubstanceCore,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_USubstanceTexture2D_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_USubstanceTexture2D_GetChannel, "GetChannel" }, // 3909029662
+		{ &Z_Construct_UFunction_USubstanceTexture2D_GetChannel, "GetChannel" }, // 3432525471
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceTexture2D_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Object Object" },
 		{ "IncludePath", "SubstanceTexture2D.h" },
 		{ "ModuleRelativePath", "Classes/SubstanceTexture2D.h" },
-		{ "SerializeToFArchive", "" },
 	};
 #endif
 #if WITH_METADATA
@@ -207,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 	{
 		((USubstanceTexture2D*)Obj)->bCooked = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked = { "bCooked", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(USubstanceTexture2D), &Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked = { "bCooked", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(USubstanceTexture2D), &Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked_SetBit, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY_MetaData[] = {
 		{ "Category", "Texture" },
@@ -217,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		{ "ToolTip", "The addressing mode to use for the Y axis." },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY = { "AddressY", nullptr, (EPropertyFlags)0x0010050000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceTexture2D, AddressY), Z_Construct_UEnum_Engine_TextureAddress, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY = { "AddressY", nullptr, (EPropertyFlags)0x0010050000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceTexture2D, AddressY), Z_Construct_UEnum_Engine_TextureAddress, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX_MetaData[] = {
 		{ "Category", "Texture" },
@@ -227,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		{ "ToolTip", "The addressing mode to use for the X axis." },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX = { "AddressX", nullptr, (EPropertyFlags)0x0010050000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceTexture2D, AddressX), Z_Construct_UEnum_Engine_TextureAddress, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX = { "AddressX", nullptr, (EPropertyFlags)0x0010050000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceTexture2D, AddressX), Z_Construct_UEnum_Engine_TextureAddress, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance_MetaData[] = {
 		{ "Category", "Substance" },
@@ -236,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		{ "ToolTip", "Graph that will update this texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance = { "ParentInstance", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceTexture2D, ParentInstance), Z_Construct_UClass_USubstanceGraphInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance = { "ParentInstance", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceTexture2D, ParentInstance), Z_Construct_UClass_USubstanceGraphInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_ParentInstance_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USubstanceTexture2D_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_bCooked,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceTexture2D_Statics::NewProp_AddressY,
@@ -254,12 +253,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		FuncInfo,
 		Z_Construct_UClass_USubstanceTexture2D_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
-		ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::PropPointers),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::PropPointers),
 		0,
 		0x009000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceTexture2D_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceTexture2D_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceTexture2D()
 	{
@@ -270,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceTexture2D() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceTexture2D, 1642623681);
+	IMPLEMENT_CLASS(USubstanceTexture2D, 94902418);
 	template<> SUBSTANCECORE_API UClass* StaticClass<USubstanceTexture2D>()
 	{
 		return USubstanceTexture2D::StaticClass();

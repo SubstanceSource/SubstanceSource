@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceEditor_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0x12CC0BB1,
+				0x6EBCAD96,
 				0x4EEE3C6A,
 				METADATA_PARAMS(nullptr, 0)
 			};

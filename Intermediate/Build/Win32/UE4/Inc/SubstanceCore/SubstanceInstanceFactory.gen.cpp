@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		return ESubstanceGenerationMode_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESubstanceGenerationMode(ESubstanceGenerationMode_StaticEnum, TEXT("/Script/SubstanceCore"), TEXT("ESubstanceGenerationMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode_Hash() { return 1911616783U; }
+	uint32 Get_Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode_Hash() { return 623508896U; }
 	UEnum* Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode()
 	{
 #if WITH_HOT_RELOAD
@@ -74,11 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 				"ESubstanceGenerationMode",
 				"ESubstanceGenerationMode",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -132,7 +132,6 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "SubstanceInstanceFactory.h" },
 		{ "ModuleRelativePath", "Classes/SubstanceInstanceFactory.h" },
-		{ "SerializeToFArchive", "" },
 	};
 #endif
 #if WITH_METADATA
@@ -143,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		{ "ToolTip", "Flag for the format used to save asset data" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode = { "GenerationMode", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, GenerationMode), Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode, METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode = { "GenerationMode", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, GenerationMode), Z_Construct_UEnum_SubstanceCore_ESubstanceGenerationMode, METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp_MetaData[] = {
 		{ "Comment", "/** Used to store when the file was created */" },
@@ -151,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		{ "ToolTip", "Used to store when the file was created" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp = { "SourceFileTimestamp", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, SourceFileTimestamp), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp = { "SourceFileTimestamp", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, SourceFileTimestamp), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_SourceFileTimestamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath_MetaData[] = {
 		{ "Comment", "/** Used for reimporting sbs files within editor */" },
@@ -159,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		{ "ToolTip", "Used for reimporting sbs files within editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath = { "AbsoluteSourceFilePath", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, AbsoluteSourceFilePath), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath = { "AbsoluteSourceFilePath", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, AbsoluteSourceFilePath), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_AbsoluteSourceFilePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath_MetaData[] = {
 		{ "Comment", "/** Used for reimporting sbs files within editor */" },
@@ -167,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		{ "ToolTip", "Used for reimporting sbs files within editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath = { "RelativeSourceFilePath", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, RelativeSourceFilePath), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath = { "RelativeSourceFilePath", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, RelativeSourceFilePath), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_RelativeSourceFilePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances_MetaData[] = {
 		{ "Comment", "/** Stores references to the instances that are created with this factory */" },
@@ -175,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		{ "ToolTip", "Stores references to the instances that are created with this factory" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances = { "mGraphInstances", nullptr, (EPropertyFlags)0x0040000000200000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, mGraphInstances), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances = { "mGraphInstances", nullptr, (EPropertyFlags)0x0040000000200000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(USubstanceInstanceFactory, mGraphInstances), METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_mGraphInstances_Inner = { "mGraphInstances", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USubstanceGraphInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USubstanceInstanceFactory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USubstanceInstanceFactory_Statics::NewProp_GenerationMode,
@@ -196,12 +195,12 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		nullptr,
 		Z_Construct_UClass_USubstanceInstanceFactory_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::PropPointers),
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_USubstanceInstanceFactory_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_USubstanceInstanceFactory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_USubstanceInstanceFactory()
 	{
@@ -212,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstanceInstanceFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(USubstanceInstanceFactory, 3748356872);
+	IMPLEMENT_CLASS(USubstanceInstanceFactory, 2997086784);
 	template<> SUBSTANCECORE_API UClass* StaticClass<USubstanceInstanceFactory>()
 	{
 		return USubstanceInstanceFactory::StaticClass();
