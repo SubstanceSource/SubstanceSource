@@ -261,8 +261,11 @@ public:
 	virtual void PostEditUndo() override;
 	virtual void PreSave(const ITargetPlatform* TargetPlatform) override;
 
-	/** Force render outputs in raw format to allow updating UTexture2D cache data */
-	void PrepareOutputsForSave(bool ForceSave = false);
+	/** Set outputs to render in raw format to allow updating UTexture2D cache data */
+	void PrepareOutputsForSave();
+
+	/** Force save existing outputs to disk*/
+	void SaveAllOutputs(bool ForceSave = false);
 #endif
 	/** End UObject interface */
 };

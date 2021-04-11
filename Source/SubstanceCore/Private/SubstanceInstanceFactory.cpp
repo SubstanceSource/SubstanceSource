@@ -8,6 +8,7 @@
 #include "SubstanceSettings.h"
 #include "SubstanceCoreHelpers.h"
 #include "SubstanceGraphInstance.h"
+#include "SubstanceOutputData.h"
 #include "SubstanceStructuresSerialization.h"
 
 #if WITH_EDITOR

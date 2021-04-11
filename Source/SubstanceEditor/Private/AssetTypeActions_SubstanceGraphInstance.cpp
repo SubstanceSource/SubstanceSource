@@ -207,6 +207,8 @@ void FAssetTypeActions_SubstanceGraphInstance::ExecuteResetDefault(TArray<TWeakO
 		{
 			Substance::Helpers::ResetToDefault(Graph->Instance);
 			Graph->PrepareOutputsForSave();
+			Substance::Helpers::RenderSync(Graph->Instance, true);
+			Graph->SaveAllOutputs();
 		}
 	}
 }

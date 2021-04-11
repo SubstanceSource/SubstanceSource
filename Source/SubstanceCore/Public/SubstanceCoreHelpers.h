@@ -14,6 +14,7 @@
 #include <Materials/MaterialInstanceConstant.h>
 #include "Materials/MaterialExpressionTextureSampleParameter2D.h"
 
+#define MAX_SUBSTANCES_TO_UPDATE 1
 
 class USubstanceInstanceFactory;
 class USubstanceGraphInstance;
@@ -327,7 +328,7 @@ SUBSTANCECORE_API void ClearCache();
 
 #if WITH_EDITOR
 /** Recomputes all substance graph instances! - Only available from editor */
-SUBSTANCECORE_API void RebuildAllSubstanceGraphInstances();
+SUBSTANCECORE_API uint32 RebuildAllSubstanceGraphInstances();
 
 /** Creates a material with a default formatted unique material name */
 SUBSTANCECORE_API void CreateDefaultNamedMaterial(USubstanceGraphInstance* Graph, FString Extention = FString());

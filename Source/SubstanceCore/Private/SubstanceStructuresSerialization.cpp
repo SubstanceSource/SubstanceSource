@@ -3,6 +3,7 @@
 
 #include "SubstanceStructuresSerialization.h"
 #include "SubstanceCorePrivatePCH.h"
+#include "Engine/Texture2D.h"
 #include "UObject/UObjectBaseUtility.h"
 #include "SubstanceCoreCustomVersion.h"
 #include "SubstanceGraphInstance.h"

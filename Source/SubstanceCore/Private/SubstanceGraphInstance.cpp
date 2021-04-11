@@ -8,6 +8,7 @@
 #include "SubstanceOutputData.h"
 #include "SubstanceStructuresSerialization.h"
 #include "SubstanceSettings.h"
+#include "SubstanceTexture2D.h"
 
 #include <substance/framework/input.h>
 #include <substance/framework/package.h>
@@ -15,7 +16,7 @@
 
 #include "UObject/UObjectIterator.h"
 #include "Containers/Map.h"
-
+#include "Engine/Texture2D.h"
 
 #if WITH_EDITOR
 #include "ContentBrowserModule.h"
@@ -25,6 +26,7 @@
 #include "Serialization/ArchiveReplaceObjectRef.h"
 #include "Misc/ScopedSlowTask.h"
 #include "FileHelpers.h"
+#include "AssetRegistryModule.h"
 #endif
 
 
@@ -210,14 +212,28 @@ void USubstanceGraphInstance::CleanupGraphInstance()
 
 bool USubstanceGraphInstance::GraphRequiresUpdate()
 {
-	for (TObjectIterator<USubstanceTexture2D> TexItr; TexItr; ++TexItr)
+#if WITH_EDITOR
+	//Get a list of all of our graph instances
+	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+	AssetRegistryModule.Get().SearchAllAssets(true);
+	TArray<FAssetData> AssetData;
+	const UClass* Class = USubstanceTexture2D::StaticClass();
+	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
+
+	TArray<USubstanceTexture2D*> AllSubstanceTextures;
+	for (auto& Itr : AssetData)
+	{
+		AllSubstanceTextures.AddUnique((USubstanceTexture2D*)Itr.GetAsset());
+	}
+
+	for (USubstanceTexture2D* TexItr : AllSubstanceTextures)
 	{
 		if (Instance->findOutput(TexItr->mUid) && TexItr->ParentInstance == this)
 		{
 			return true;
 		}
 	}
-
+#endif
 	return false;
 }
 
@@ -269,7 +285,9 @@ void USubstanceGraphInstance::PostDuplicate(bool bDuplicateForPIE)
 		this->mUserData.ParentGraph = this;
 		Instance->mUserData = (size_t)&mUserData;
 #if WITH_EDITOR
-		PrepareOutputsForSave(true);
+		PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(Instance);
+		SaveAllOutputs(true);
 #else
 		Substance::Helpers::RenderAsync(Instance);
 #endif
@@ -401,7 +419,7 @@ void USubstanceGraphInstance::PostLoad()
 }
 
 #if WITH_EDITOR
-bool USubstanceGraphInstance::CanEditChange(const FProperty*) const
+bool USubstanceGraphInstance::CanEditChange(const UProperty* InProperty) const
 {
 	return true;
 }
@@ -412,11 +430,10 @@ void USubstanceGraphInstance::PostEditUndo()
 }
 void USubstanceGraphInstance::PreSave(const ITargetPlatform* TargetPlatform)
 {
-	PrepareOutputsForSave();
 	Super::PreSave(TargetPlatform);
 }
 
-void USubstanceGraphInstance::PrepareOutputsForSave(bool ForceSave)
+void USubstanceGraphInstance::PrepareOutputsForSave()
 {
 	for (auto& OutputDataItr : OutputInstances)
 	{
@@ -425,22 +442,16 @@ void USubstanceGraphInstance::PrepareOutputsForSave(bool ForceSave)
 
 	Substance::Helpers::ClearFromRender(this);
 
-#define LOCTEXT_NAMESPACE "SubstanceText"
-	//Create a slowtask here to show a progress bar for user feedback
-	FScopedSlowTask CacheOutputTask(Instance->getOutputs().size(), LOCTEXT("Caching Outputs", "Caching Substance Output Textures to disk."));
-	CacheOutputTask.MakeDialog();
-#undef LOCTEXT_NAMESPACE
-
 	for (const auto& ItOut : Instance->getOutputs())
 	{
-		CacheOutputTask.EnterProgressFrame();
 		//Force outputs to source format
 		Substance::Helpers::OverwriteSubstancePixelFormatForSourceImage(ItOut);
 		ItOut->flagAsDirty();
 	}
+}
 
-	Substance::Helpers::RenderSync(Instance, true);
-
+void USubstanceGraphInstance::SaveAllOutputs(bool ForceSave)
+{
 	if (ForceSave)
 	{
 		TArray<UPackage*> ThingsToSave;
@@ -458,7 +469,7 @@ void USubstanceGraphInstance::PrepareOutputsForSave(bool ForceSave)
 		if (ConstantCreatedMaterial)
 			ThingsToSave.Add((UPackage*)ConstantCreatedMaterial->GetOuter());
 
-		FEditorFileUtils::PromptForCheckoutAndSave(ThingsToSave, false, false);
+		FEditorFileUtils::SaveDirtyPackages(false, false, true, false, false, false);
 	}
 
 	for (const auto& ItOut : Instance->getOutputs())

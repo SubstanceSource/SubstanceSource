@@ -44,6 +44,8 @@ SSubstanceEditorPanel::~SSubstanceEditorPanel()
 	{
 		CachePresetValues();
 		Graph->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(Graph->Instance, true);
+		Graph->SaveAllOutputs();
 	}
 }
 
@@ -350,6 +352,8 @@ void SSubstanceEditorPanel::OnToggleOutput(ECheckBoxState InNewState, SubstanceA
 		Substance::Helpers::EnableTexture(Output, Graph);
 
 		Graph->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(Graph->Instance, true);
+		Graph->SaveAllOutputs();
 
 		OutputData = reinterpret_cast<USubstanceOutputData*>(Output->mUserData);
 
@@ -682,7 +686,7 @@ void SSubstanceEditorPanel::OnFocusChanging(const FWeakWidgetPath& PreviousFocus
 
 	bool bCache = true;
 
-	if (NewWidgetPath.GetWindow()->GetTitle().ToString() != Graph->GetName())
+	if (NewWidgetPath.TopLevelWindow != nullptr && NewWidgetPath.GetWindow()->GetTitle().ToString() != Graph->GetName())
 	{
 		TSharedPtr<SWindow> window = NewWidgetPath.GetWindow()->GetParentWindow();
 		while (window)
@@ -703,6 +707,8 @@ void SSubstanceEditorPanel::OnFocusChanging(const FWeakWidgetPath& PreviousFocus
 	{
 		CachePresetValues();
 		Graph->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(Graph->Instance, true);
+		Graph->SaveAllOutputs();
 	}
 }
 
@@ -966,6 +972,8 @@ void SSubstanceEditorPanel::CloseColorPicker(const TSharedRef<SWindow>&)
 	{
 		CachePresetValues();
 		Graph->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(Graph->Instance, true);
+		Graph->SaveAllOutputs();
 	}
 }
 

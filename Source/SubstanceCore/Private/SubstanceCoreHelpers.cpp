@@ -53,6 +53,7 @@
 #include "IContentBrowserSingleton.h"
 #include "Interfaces/IPluginManager.h"
 #include "AssetRegistryModule.h"
+#include "Engine/AssetManager.h"
 #endif
 
 #if PLATFORM_PS4
@@ -346,8 +347,7 @@ void UpdateSubstanceOutput(UTexture2D* TextureOutput, const SubstanceTexture& Re
 #endif
 		)
 	{
-		if(!TextureOutput->HasPendingUpdate())
-			TextureOutput->ReleaseResource();
+		TextureOutput->ReleaseResource();
 
 		Texture->Mips.Empty();
 
@@ -711,7 +711,7 @@ void EnableTexture(SubstanceAir::OutputInstance* Output, USubstanceGraphInstance
 		PackageName = TEXT("/") + PackageName;
 	}
 
-	UObject* TextureParent = CreatePackage(Outer, *PackageName);
+	UObject* TextureParent = CreatePackage(*PackageName);
 	CreateSubstanceTexture2D(Output, false, TextureName, TextureParent, Graph);
 
 	//Restore settings of created texture is available
@@ -1854,7 +1854,7 @@ USubstanceGraphInstance* DuplicateGraphInstance(USubstanceGraphInstance* SourceG
 	PackageNameStr = BasePath;
 #endif
 
-	UObject* InstanceParent = CreatePackage(nullptr, *PackageNameStr);
+	UObject* InstanceParent = CreatePackage(*PackageNameStr);
 
 	USubstanceGraphInstance* NewInstance = Substance::Helpers::InstantiateGraph(SourceGraphInstance->ParentFactory,
 	                                       SourceGraphInstance->Instance->mDesc, InstanceParent, AssetNameStr, false, SourceGraphInstance->GetFlags());
@@ -1940,7 +1940,7 @@ void CopyInstance(USubstanceGraphInstance* RefInstance, USubstanceGraphInstance*
 				FString PackageName;
 				PackageName = RefInstance->ParentFactory->GetName();
 #endif
-				UObject* TextureParent = CreatePackage(nullptr, *PackageName);
+				UObject* TextureParent = CreatePackage(*PackageName);
 
 				//#Create new texture - If play in editor (PIE), this means the instance is dynamic / transient
 				Substance::Helpers::CreateSubstanceTexture2D(Output, PIE ? true : false, TextureName, TextureParent);
@@ -2057,7 +2057,7 @@ UPackage* CreateObjectPackage(UObject* Outer, FString ObjectName)
 	FString OuterName = Outer->GetName();
 	OuterName.Split(TEXT("/"), &Left, &Right, ESearchCase::IgnoreCase, ESearchDir::FromEnd);
 	FString PkgName = Left + TEXT("/") + ObjectName;
-	UPackage* Pkg = CreatePackage(nullptr, *PkgName);
+	UPackage* Pkg = CreatePackage(*PkgName);
 	Pkg->FullyLoad();
 	return Pkg;
 }
@@ -3048,6 +3048,8 @@ bool ImportAndApplyPresetForGraph(USubstanceGraphInstance* GraphInstance)
 	if (CurretPreset.apply(*GraphInstance->Instance, SubstanceAir::Preset::Apply_Merge))
 	{
 		GraphInstance->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(GraphInstance->Instance, true);
+		GraphInstance->SaveAllOutputs();
 		return true;
 	}
 
@@ -3145,7 +3147,7 @@ void ClearCache()
 //This also requires all substance graph instances and textures to be fully loaded to apply the changes.
 /** Recomputes all substance graph instances! - Only available from editor */
 #if WITH_EDITOR
-void RebuildAllSubstanceGraphInstances()
+uint32 RebuildAllSubstanceGraphInstances()
 {
 #define LOCTEXT_NAMESPACE "SubstanceHelpers"
 
@@ -3153,55 +3155,133 @@ void RebuildAllSubstanceGraphInstances()
 	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
 	AssetRegistryModule.Get().SearchAllAssets(true);
 	TArray<FAssetData> AssetData;
-	const UClass* Class = USubstanceGraphInstance::StaticClass();
-	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
 
-	
-	TArray<USubstanceGraphInstance*> AllGraphInstances;
+	//Load all Material Instances
+	const UClass* Class = UMaterialInstanceConstant::StaticClass();
+	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
+	TArray<UMaterialInstanceConstant*> AllMaterialInstances;
 	for (auto& Itr : AssetData)
 	{
-		AllGraphInstances.AddUnique((USubstanceGraphInstance*)Itr.GetAsset());
+		UMaterialInstanceConstant * Mat = (UMaterialInstanceConstant*)Itr.GetAsset();
+		AllMaterialInstances.AddUnique(Mat);
 	}
+	AssetData.Empty();
+
+	//Load All Materials
+	Class = UMaterial::StaticClass();
+	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
+	TArray<UMaterial*> AllMaterials;
+	for (auto& Itr : AssetData)
+	{
+		UMaterial * Mat = (UMaterial*)Itr.GetAsset();
+		AllMaterials.AddUnique(Mat);
+	}
+	AssetData.Empty();
+
+	//Load all substancetexture objects
+	Class = USubstanceTexture2D::StaticClass();
+	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
+	TArray<USubstanceTexture2D*> AllSubstanceTextures;
+	for (auto& Itr : AssetData)
+	{
+		AllSubstanceTextures.AddUnique((USubstanceTexture2D*)Itr.GetAsset());
+	}
+	AssetData.Empty();
+
+	//Load all graph instances but only store ones that need to update
+	Class = USubstanceGraphInstance::StaticClass();
+	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
+	TArray<USubstanceGraphInstance*> GraphsToUpdate;
+	for (auto& Itr : AssetData)
+	{
+		USubstanceGraphInstance * Instance = (USubstanceGraphInstance*)Itr.GetAsset();
+		if(Instance->GraphRequiresUpdate())
+			GraphsToUpdate.AddUnique(Instance);
+	}
+	AssetData.Empty();
+
+	UAssetManager& MainAssetManager = UAssetManager::Get();
+
+	TArray<SubstanceAir::shared_ptr<SubstanceAir::GraphInstance>> InstancesToRender;
 
 	//Create a slow task for the loading percentage
-	FScopedSlowTask SlowTask(AllGraphInstances.Num(), LOCTEXT("Rebuilding all Substance Graph Instances", "Rebuilding Substance Graphs"));
+	FScopedSlowTask SlowTask(GraphsToUpdate.Num(), LOCTEXT("Rebuilding all Substance Graph Instances", "Rebuilding Substance Graphs"));
 	SlowTask.MakeDialog();
-
+	UE_LOG(LogSubstanceCore, Log, TEXT("Rebuilding % graph(s)"), GraphsToUpdate.Num());
 	//Recompute every graph instance
-	for (auto& Itr : AllGraphInstances)
+	for (USubstanceGraphInstance * CurrInstance : GraphsToUpdate)
 	{
-		if (!Itr->GraphRequiresUpdate())
-		{
-			//Update the progress each loop
-			SlowTask.EnterProgressFrame();
-			continue;
-		}
-		//Store graph locally
-		USubstanceGraphInstance* Graph = Itr;
+		//limit the number of rendered substances per update to avoid running out of video memory
+		if (InstancesToRender.Num() > MAX_SUBSTANCES_TO_UPDATE)
+			break;
 
-		CreateTextures(Graph);
+		CreateTextures(CurrInstance);
+		
+		InstancesToRender.AddUnique(CurrInstance->Instance);
 
-		//TODO:: Replace references for existing textures
 		TArray<uint32> OutputsToRemove;
-		for (auto& OutputInst : Graph->OutputInstances)
+		for (auto& OutputInst : CurrInstance->OutputInstances)
 		{
 			bool textureUsed = false;
-			for (TObjectIterator<USubstanceTexture2D> TexItr; TexItr; ++TexItr)
+
+			for (USubstanceTexture2D* TexItr : AllSubstanceTextures)
 			{
-				if (OutputInst.Key == TexItr->mUid && OutputInst.Value->GetData() && TexItr->ParentInstance == Graph)
+				if (OutputInst.Key == TexItr->mUid && OutputInst.Value->GetData() && TexItr->ParentInstance == CurrInstance)
 				{
-					USubstanceTexture2D* Texture = *TexItr;
+					USubstanceTexture2D* Texture = TexItr;
 					UTexture2D* GeneratedTexture = Cast<UTexture2D>(OutputInst.Value->GetData());
 					GeneratedTexture->MarkPackageDirty();
 
+					//Replace usubstancetexture refernces with utexture2d
 					TArray<UObject*> ObjectsConsolidatingTo{ Texture };
-					ObjectTools::FConsolidationResults conResults = ObjectTools::ConsolidateObjects(GeneratedTexture, ObjectsConsolidatingTo, false);
+					ObjectTools::ConsolidateObjects(GeneratedTexture, ObjectsConsolidatingTo, false);
+
+					//Check material instances for connected usubstancetextures
+					for (UMaterialInstanceConstant* MatInst : AllMaterialInstances)
+					{
+						UMaterialInterface* BaseInst = (UMaterialInterface*)MatInst;
+						TArray<FMaterialParameterInfo> PInfoArray;
+						TArray<FGuid> GuidArray;
+						BaseInst->GetAllTextureParameterInfo(PInfoArray, GuidArray);
+
+						for (FMaterialParameterInfo info : PInfoArray)
+						{
+							UTexture* texout;
+							BaseInst->GetTextureParameterValue(info, texout, false);
+							if (texout == Texture)
+							{
+								MatInst->SetTextureParameterValueEditorOnly(info, GeneratedTexture);
+							}
+						}
+					}
+
+					//Check material objects for connected usubstancetextures
+					for (UMaterial* Mat : AllMaterials)
+					{
+						UMaterialInterface* BaseInst = (UMaterialInterface*)Mat;
+						TArray<FMaterialParameterInfo> PInfoArray;
+						TArray<FGuid> GuidArray;
+						BaseInst->GetAllTextureParameterInfo(PInfoArray, GuidArray);
+
+						for (FMaterialParameterInfo info : PInfoArray)
+						{
+							UTexture* texout;
+							BaseInst->GetTextureParameterValue(info, texout, false);
+							if (texout == Texture)
+							{
+								Mat->SetTextureParameterValueEditorOnly(info.Name, GeneratedTexture);
+							}
+						}
+					}
+
 					textureUsed = true;
+					AllSubstanceTextures.Remove(TexItr);
+					break;
 				}
 			}
 			if (!textureUsed && OutputInst.Value->GetData())
 			{
-				for (auto& Output : Graph->Instance->getOutputs())
+				for (auto& Output : CurrInstance->Instance->getOutputs())
 				{
 					if (Output->mDesc.mUid == OutputInst.Key)
 					{
@@ -3211,15 +3291,16 @@ void RebuildAllSubstanceGraphInstances()
 				RegisterForDeletion(Cast<UTexture2D>(OutputInst.Value->GetData()));
 				OutputsToRemove.Add(OutputInst.Key);
 			}
+
 		}
 
 		for (auto& OutputID : OutputsToRemove)
 		{
-			Graph->OutputInstances.FindAndRemoveChecked(OutputID);
+			CurrInstance->OutputInstances.FindAndRemoveChecked(OutputID);
 		}
 
 		//Flag all outputs to be recomputed
-		for (const auto& Output : Graph->Instance->getOutputs())
+		for (const auto& Output : CurrInstance->Instance->getOutputs())
 		{
 			if (Output && Output->mEnabled)
 			{
@@ -3235,11 +3316,20 @@ void RebuildAllSubstanceGraphInstances()
 		}
 
 		//Force a sync render and cache of texture data to prepare new objects for use in the editor
-		Graph->PrepareOutputsForSave(true);
+		CurrInstance->PrepareOutputsForSave();
+	}
+
+	Substance::Helpers::RenderSync(InstancesToRender, true);
+
+	for (USubstanceGraphInstance * CurrInstance : GraphsToUpdate)
+	{
+		CurrInstance->SaveAllOutputs(true);
 
 		//Update the progress each loop
 		SlowTask.EnterProgressFrame();
 	}
+
+	return InstancesToRender.Num();
 #undef LOCTEXT_NAMESPACE
 }
 
@@ -3262,7 +3352,7 @@ void CreateDefaultNamedMaterial(USubstanceGraphInstance* Graph, FString Extentio
 
 	AssetToolsModule.Get().CreateUniqueAssetName(MaterialPath + TEXT("/"), InMaterialName, MaterialPath, NewMaterialName);
 
-	UObject* MaterialBasePackage = CreatePackage(nullptr, *MaterialPath);
+	UObject* MaterialBasePackage = CreatePackage(*MaterialPath);
 
 	Substance::Helpers::CreateMaterial(Graph, NewMaterialName, MaterialBasePackage);
 }
@@ -3289,14 +3379,17 @@ SUBSTANCECORE_API TArray<UMaterial*> GetSubstanceIncludedMaterials()
 
 SUBSTANCECORE_API bool SubstancesRequireUpdate()
 {
+	//Get a list of all of our graph instances
 	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
 	AssetRegistryModule.Get().SearchAllAssets(true);
+	TArray<FAssetData> AssetData;
+	const UClass* Class = USubstanceGraphInstance::StaticClass();
+	AssetRegistryModule.Get().GetAssetsByClass(Class->GetFName(), AssetData);
 
-	//Get a list of all of our graph instances
 	TArray<USubstanceGraphInstance*> AllGraphInstances;
-	for (TObjectIterator<USubstanceGraphInstance> Itr; Itr; ++Itr)
+	for (auto& Itr : AssetData)
 	{
-		AllGraphInstances.AddUnique(*Itr);
+		AllGraphInstances.AddUnique((USubstanceGraphInstance*)Itr.GetAsset());
 	}
 
 	for (USubstanceGraphInstance* graph : AllGraphInstances)

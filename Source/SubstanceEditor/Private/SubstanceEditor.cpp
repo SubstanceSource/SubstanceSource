@@ -327,6 +327,8 @@ void FSubstanceEditor::OnResetDefaultValues()
 		}
 
 		GetGraph()->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(GetGraph()->Instance, true);
+		GetGraph()->SaveAllOutputs();
 	}
 }
 

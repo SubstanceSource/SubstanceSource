@@ -10,7 +10,9 @@
 #include "SubstanceOutputData.h"
 #include "substance/framework/framework.h"
 
+#include "Engine/Texture2D.h"
 #include "Materials/MaterialExpressionTextureSample.h"
+#include "UObject/UObjectIterator.h"
 
 USubstanceUtility::USubstanceUtility(class FObjectInitializer const& PCIP) : Super(PCIP)
 {
@@ -115,7 +117,9 @@ USubstanceGraphInstance* USubstanceUtility::CreateGraphInstance(UObject* WorldCo
 
 		//Initial update
 #if WITH_EDITORONLY_DATA
-		GraphInstance->PrepareOutputsForSave(true);
+		GraphInstance->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(GraphInstance->Instance, true);
+		GraphInstance->SaveAllOutputs(true);
 #endif
 	}
 

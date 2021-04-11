@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include "Materials/MaterialLayersFunctions.h"
+
 #include "substance/framework/typedefs.h"
 #include "substance/framework/callbacks.h"
 #include "SubstanceOutputData.generated.h"

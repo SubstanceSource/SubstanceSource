@@ -376,6 +376,8 @@ UObject* USubstanceFactory::FactoryCreateBinary(
 			NewInstance->SetInputInt("$outputsize", DefaultOutputSize);
 
 			NewInstance->PrepareOutputsForSave();
+			Substance::Helpers::RenderSync(NewInstance->Instance, true);
+			NewInstance->SaveAllOutputs();
 
 			if (ImportOptions.bCreateMaterial)
 			{
@@ -499,6 +501,8 @@ void USubstanceFactory::RecreateGraphsPostReimport(USubstanceInstanceFactory* Pa
 
 		//Make sure the textures are recomputed post create
 		NewInstance->PrepareOutputsForSave();
+		Substance::Helpers::RenderSync(NewInstance->Instance, true);
+		NewInstance->SaveAllOutputs();
 
 		//Check if material is valid if so, set it up with the new outputs
 		Substance::Helpers::ResetMaterialTexturesFromGraph(NewInstance, GrItr.OwnedMaterialReferencee, GrItr.ReferencingMaterials);

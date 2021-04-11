@@ -126,7 +126,14 @@ public:
 				nullptr);
 
 			if (RebuildMessage == EAppReturnType::Yes)
-				Substance::Helpers::RebuildAllSubstanceGraphInstances();
+			{
+				while (Substance::Helpers::RebuildAllSubstanceGraphInstances() != 0)
+				{
+					//Reload plugin to free all substance memory and unblock rendering
+					FModuleManager::Get().UnloadModule("SubstanceCore");
+					FModuleManager::LoadModuleChecked<FSubstanceCoreModule>("SubstanceCore");
+				}
+			}
 			else if (RebuildMessage == EAppReturnType::Cancel)
 				FPlatformMisc::RequestExit(0);
 		}
